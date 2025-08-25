@@ -1,21 +1,75 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-color: #4b6cb7;
 
 }
 
-
+#txt {
+  color: #f11237;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-display: auto;
+  scrollbar-track-color: #0add70;
+}
 .video1 {
+  width: 100%;
+  height: auto;
   border-radius: 20px;
   background-color: #28329c;
   border-color: #f11237;
   border-bottom: #f11237;
+
 }
 
+.videobox { 
+  background-color: 
+ display: flex;
+flex-direction: column;
+  font-size: 30px;
+ grid-template-columns: max-content;
+}
+
+.point  {
+
+   list-style: none;
+  text-decoration-color: #f11237;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: block;
+ font-size: 20px;
+}
+
+.point a:hover {
+  background-color: yellow;
+  font-size: 18px;
+}
+
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+.bodytext:hover {
+  color: #1273f1;
+}
+
+
 .text {
-  font-size: large;
+  font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: #f11237;
 text-align: center;
@@ -197,7 +251,10 @@ border-color:black;
   opacity: 75%;
 }
 
-
+.point:hover {
+  background-color: rgb(222, 203, 203);
+  font-size: 18px;
+}
 
 b {text-decoration: underline;}
 
@@ -316,7 +373,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 600px) {
   .nav-links {
-    flex-wrap: wrap;
+ flex-wrap: wrap;
+   
   }
 
   .nav-links li {
@@ -357,7 +415,10 @@ opacity: 50%;
 border-radius: 20px;
 border-color:black;
 
-
+.videobox {
+  display: flex;
+  flex-direction: column;
+}
 
 
 

@@ -12,6 +12,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+.viewphoto {
+
+  filter: blur(2px);
+}
+
+.viewphoto:hover{
+filter: none;
+ opacity: 100%;
+ transform: translateY(-10px);
+  
+}
 
 #txt {
   font-size: 40px;

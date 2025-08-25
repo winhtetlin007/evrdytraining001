@@ -13,7 +13,7 @@
         <ul class="nav-links">
           <li><a href="./index.html" >Home</a></li>
           <li><a href="./training.html" class="active">Part-1</a></li>
-          <li><a href="./part2.html">Part-2</a></li>
+          <li><a href="#">Part-2</a></li>
           <li><a href="#">Part-3</a></li>
           <li><a href="#">Part-4</a></li>
           <li><a href="#">Part-5</a></li>
@@ -25,7 +25,35 @@
 
     <section>
       <main>
+     <div id="txt"></div>
+             <br>
+        
+   <body onload="startTime()">
+
+<h4><pre>"အချိန်ရှိခိုက်လုံးလစိုက်"</pre></h4>
+
+
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s ;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
         <h1>Training Note</h1>
+        
 
         <article class="des">
       
@@ -65,13 +93,35 @@
  သဘာဝအရောင်တွင် အနီဓာတ်မပါသောကြောင့်တိုက်ရိုက်လုပ်ဆောင်ရမည်။ ချွတ်စရာမလိုပါ။</pre>
          
 </article>
-</div>
-<div >
-        <video   title="training video"    class="video1" width="480" height="240" controls>
+</div><br>
+
+   
+<div class="videobox">
+<div > 
+  <ul class="point">
+    <li >
+ This is part-1
+</li></div><br>
+        <video   title="training video"    class="video1" width="400"  controls>
   <source src="Video/Screen Recording 2025-08-22 214135.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
   Your browser does not support the video tag.
 </video>
+</div><br>
+<div > 
+  <ul class="point">
+    <li >
+ This is part-2
+</li></div><br>
+
+<div >
+        <video   title="training video"    class="video1" width="400"  controls>
+  <source src="Video/Screen Recording 2025-08-22 214135.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+</div>
 </div>
         <p>
           
