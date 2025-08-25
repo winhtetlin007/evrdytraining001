@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EVRDY TRaining</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./part2.css" />
+  </head>
+  <body>
+    <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+    <header>
+      <h2>Coloring Training Videos</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html" >Home</a></li>
+          <li><a href="./training.html" class="active">Part-1</a></li>
+          <li><a href="#">Part-2</a></li>
+          <li><a href="#">Part-3</a></li>
+          <li><a href="#">Part-4</a></li>
+          <li><a href="#">Part-5</a></li>
+          <li><a href="#">Part-6</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <main>
+        <h1>London</h1>
+        <p>
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area of over 13 million
+          inhabitants.
+        </p>
+<iframe name="myiFrame" width="600px" height="400px" src="https://streamable.com/m29l25" scrolling="no" marginwidth="0" marginheight="0" style="border:0px none #ffffff;"></iframe>
+          height="320"
+          allow="autoplay"
+        ></iframe>
+        
