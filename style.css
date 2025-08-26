@@ -4,6 +4,80 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.container {
+  background: #111827; /* Gray-900 */
+  padding: 30px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.calc-text {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1f2937;
+  border-radius: 10px;
+}
+
+.calc-text p {
+  width: 100%;
+  font-size: 3rem;
+  text-align: end;
+  color: #d1d5db; /* Gray-300 */
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+button {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  height: 65px;
+  width: 65px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.key-zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 14px;
+}
+
+.key-operate {
+  background: #14b8a6; /* Teal-500 */
+  color: #fff;
+}
+
+.key-others {
+  background: #374151; /* Gray-700 */
+  color: #e5e7eb; /* Gray-200 */
+}
+
+.numbers {
+  background: #1f2937; /* Gray-800 */
+  color: #f3f4f6; /* Gray-100 */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+
+
+
 
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
@@ -12,6 +86,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.clock:hover {
+  color: green;
+
+}
+
+
 .viewphoto {
 
   filter: blur(2px);
@@ -20,8 +101,7 @@ body {
 .viewphoto:hover{
 filter: none;
  opacity: 100%;
- transform: translateY(-10px);
-  
+ transform: translateY(-0.5px);
 }
 
 #txt {
@@ -38,13 +118,18 @@ display: block
 /* Header Styles */
 header {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  padding: 1rem 0;
+  padding: 10px 0 0 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
+#clock:hover {
+  color: #0add70;
+
+
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -71,7 +156,7 @@ header {
 
 .logo-text {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -121,7 +206,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
   color: #4b6cb7;
 }

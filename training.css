@@ -7,13 +7,40 @@
   border-color: #4b6cb7;
 
 }
+.parttitle {
+  background-color: #473f41;
+  text-align: center;
+  padding:5px 3.5px;
+  margin:10px 0px;
+  font-weight: 750;
+}
+.partext {
+  text-align: center;
+  text-justify: auto;
+  list-style: none;
+  text-decoration: underline;
+  font-weight:800;
+}
+.f {
+  transform: translateY(-10px
+  );
+}
+.f:hover{
+  font-size: 1rem;
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 #txt {
+  font-weight: 500;
   color: #f11237;
-  font-size: large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   font-display: auto;
-  scrollbar-track-color: #0add70;
+
+  background-color:lightgray;
+
 }
 .video1 {
   width: 100%;
@@ -69,7 +96,7 @@ flex-direction: column;
 
 
 .text {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #f11237;
 text-align: center;
@@ -85,15 +112,20 @@ body {
 /* Style the header */
 header {
   background-color: #28329c;
-  padding: 30px;
+  padding: 
+  30px;
   text-align: center;
   font-size: 25px;
   color: white;
 }
 
+.headtext {
+  font-size: 1.5rem;
+  margin: 10px; 
+}
 header {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  padding: 1rem 0;
+  padding: 10px  0 0 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -174,13 +206,14 @@ footer {
 footer {
   background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
   color: white;
-  padding: 2rem 0;
+  padding:10rem 0 0 0 ;
   text-align: center;
+
 }
 
 .developer {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1 rem;
   font-weight: 500;
 }
 
@@ -246,7 +279,7 @@ border-color:black;
 
 
 .hairphoto:hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   opacity: 75%;
 }
